@@ -14,13 +14,16 @@ compile 'com.android.support:recyclerview-v7:21.0.+'
 ```
 
 2. Seguidamente definiremos nuestro RecyclerView en el layout donde lo queremos incluir:
+
 ```
 <android.support.v7.widget.RecyclerView
         android:id="@+id/recycler_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 ```
+
 3. Creamos otro layout que definirá la interfaz de los elementos de la lista, en nuestro caso un simple TextView:
+
 ```
 <RelativeLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
@@ -33,6 +36,7 @@ compile 'com.android.support:recyclerview-v7:21.0.+'
             android:layout_height="20dp" />
 </RelativeLayout>
 ```
+
 ### ¿Contras?
 Aunque tiene la ventaja de soportar multitud de animaciones muy eficientes para cuando creamos, editamos y eliminamos un elemento, carece de otras funcionalidades básicas, como lo son:
 > - No tiene un método para implementar empty views o lo que es lo mismo, imágenes/texto para cuando no hay ningún elemento en la lista. 
